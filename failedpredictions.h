@@ -1,7 +1,6 @@
 #ifndef FAILEDPREDICTIONS_H
 #define FAILEDPREDICTIONS_H
 
-#include <QtWidgets/QWidget>
 #include <QtCharts>
 
 QT_BEGIN_NAMESPACE
@@ -16,6 +15,10 @@ public:
     FailedPredictions(QWidget *parent = nullptr);
     ~FailedPredictions();
     void refreshpic();
+    void mouseReleaseEvent(QMouseEvent *event);
+    void mousePressEvent(QMouseEvent *event);
+    void mouseMoveEvent(QMouseEvent *event);
+
 
 private slots:
     void on_commandLinkButton_clicked();
@@ -41,6 +44,22 @@ private slots:
     void on_pushButton_9_clicked();
 
     void on_pushButton_10_clicked();
+
+    void on_pushButton_15_clicked();
+
+    void on_pushButton_16_clicked();
+
+    void on_pushButton_17_clicked();
+
+    void on_pushButton_18_clicked();
+
+    void on_pushButton_19_clicked();
+
+    void on_pushButton_20_clicked();
+
+    void on_pushButton_21_clicked();
+
+    void on_pushButton_22_clicked();
 
 private:
     Ui::FailedPredictions *ui;
